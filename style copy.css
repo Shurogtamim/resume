@@ -1,0 +1,104 @@
+
+body{
+   background-color: ivory;
+   font-size: 14px;
+   line-height: 20px;
+}
+header
+{
+   text-align:center ;
+   
+}
+
+.content{
+   display: flex;
+   width: 800px;
+   margin: 50px auto;
+   background: #26252d;
+   padding: 0px;
+}
+
+.content .left{
+   width: 35%;
+   background: ivory;
+}
+
+.content .left .myphoto{
+   width: 100%;
+}
+
+.content .left .myphoto img{
+   width: 100%;
+   display: block;
+}
+
+.content .left .leftbottom{
+   padding: 20px 30px;
+}
+
+.content .item{
+   padding: 20px 0;
+   border-bottom: 1px solid beige;
+   background-color: b;
+}
+
+.content  .item:last-child{
+   border-bottom: 0;
+}
+
+.content .right{
+   width: 65%;
+   padding: 20px 40px;
+   color: #26252d;
+   background-color: beige;
+}
+
+
+nav 
+{
+   font-weight: bold;
+   color: beige;
+   border: 2px solid black;
+   text-align: center;
+   width: 10em;
+   background-color: purple;
+}
+
+nav ul 
+{
+   display: none;
+   list-style: none;
+   margin: 0;
+   padding: 0;
+}
+
+nav:hover ul {display: block;}
+
+nav ul li 
+{
+   border-top: 2px solid orange;
+   background-color: honeydew;
+   width: 10em;
+   color: black;
+}
+
+nav ul li:hover{background-color: peachpuff;}
+
+@media screen and (max-width: 800px){
+   .content{
+      width: 95%;
+      margin: 10px auto;
+      flex-direction: column;
+   }
+   .content .left,
+   .content .right{
+      width: 100%;
+   }
+}
+
+@media screen and (max-width: 424px){
+   .content .right{
+      padding: 20px 30px;
+   }
+}
+
